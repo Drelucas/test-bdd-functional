@@ -1,0 +1,11 @@
+test: &default
+  url: https://www.walmart.com.br
+  user: <%= ENV['USERNAME'] %>
+  pass: <%= ENV['PASSWORD'] %>
+
+development:
+  <<: *default
+
+production:
+  <<: *default
+  
